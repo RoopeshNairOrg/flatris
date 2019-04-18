@@ -19,7 +19,7 @@ variables:
   
   # Kubernetes Namespace
   k8sNamespace: 'default'
-  imagePullSecret: 'SmartHotelacr-auth'
+  imagePullSecret: smarthotelacr-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
