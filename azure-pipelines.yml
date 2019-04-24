@@ -48,7 +48,7 @@ stages:
         artifactName: 'manifests'
         targetPath: 'manifests'
 
-- stage: Deploy
+- stage: DeployDev
   displayName: Deploy stage
   dependsOn: Build
   jobs:
@@ -63,7 +63,7 @@ stages:
           steps:
           - scritp: echo deploy to dev
 
-- stage: Deploy
+- stage: DeployFlatris
   displayName: Deploy stage
   dependsOn: Build
   jobs:
