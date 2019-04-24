@@ -56,6 +56,21 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
+    environment: 'smarthotel-dev.bookings'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - scritp: echo deploy to dev
+
+- stage: Deploy
+  displayName: Deploy stage
+  dependsOn: Build
+  jobs:
+  - deployment: Deploy
+    displayName: Deploy
+    pool:
+      vmImage: $(vmImageName)
     environment: 'flatris-devenv.flatris-dev'
     strategy:
       runOnce:
