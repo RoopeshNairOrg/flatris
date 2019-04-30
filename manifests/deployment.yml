@@ -1,16 +1,16 @@
-apiVersion : apps/v1beta1
-kind: Deployment
-metadata:
-  name: roopeshnairorg-flatris 
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: roopeshnairorg-flatris 
-    spec:
-      containers:
-        - name: roopeshnairorg-flatris 
-          image: ronacr.azurecr.io/roopeshnairorg-flatris 
-          ports:
-          - containerPort: 3000
+#apiVersion : apps/v1beta1
+#kind: Deployment
+#metadata:
+#  name: roopeshnairorg-flatris 
+#spec:
+#  replicas: 1
+#  template:
+ #   metadata:
+ #     labels:
+ #       app: roopeshnairorg-flatris 
+ #   spec:
+ #     containers:
+  #      - name: roopeshnairorg-flatris 
+  #        image: ronacr.azurecr.io/roopeshnairorg-flatris 
+  #       ports:
+   #       - containerPort: 3000
